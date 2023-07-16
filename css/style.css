@@ -1,0 +1,458 @@
+/* Google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Common and reset code starts here  */
+:root {
+    --heading-color1 : #ffc200;
+    --heading-color2 : #333333;
+    --footer-color : #303030;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border : none;
+    outline: none;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style-type: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Grand Hotel', cursive;
+    font-weight: 400;
+}
+p{
+    font-family: 'Montserrat', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+/* Common and reset code ends here  */
+/* Hero part starts here  */
+.hero_part {
+    background-image: url(../images/header-bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.nav_list {
+    background: var(--heading-color1) !important;
+}
+.nav-link {
+    color : white;
+    margin-right: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.4s;
+}
+.nav-link:hover {
+    color : black;
+}
+#menu_button {
+    color : black;
+    background: white;
+}
+.hero_heading {
+    font-size: 125px;
+    color : var(--heading-color1);
+    margin-top: 110px;
+}
+.hero_text {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.hero_btn {
+    background: var(--heading-color1);
+    padding: 10px 40px;
+    margin-bottom: 130px;
+    font-size: 19px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.hero_btn:hover {
+    color : var(--heading-color1);
+    background: black;
+    text-decoration: overline;
+}
+@media only screen and (max-width : 992px) and (min-width : 768px) {
+    .nav-item a {
+        border-bottom: 1px dashed black;
+    }
+    #search_icon {
+        border-bottom: none;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .small_btn {
+        margin-left: 25%;
+    }
+    .nav-item a {
+        border-bottom: 1px dashed white;
+    }
+    #search_icon {
+        border-bottom: none;
+    }
+    .nav_list {
+        background: black !important;
+    }
+    .nav-link:hover {
+        color : var(--heading-color1);
+    }
+    .hero_part {
+        background-image: linear-gradient( to bottom right, #ffc200 , #333333);
+    }
+    .hero_heading, .hero_text {
+        text-align: center;
+    }
+}
+/* Hero part ends here  */
+/* Best seller section starts here  */
+.seller_section {
+    margin-top: 135px;
+}
+.seller-heading {
+    margin-bottom: 5px;
+    font-size: 75px;
+}
+.seller_text {
+    font-size: 18px;
+}
+.dish_info h2 {
+    font-size: 40px;
+    margin-top: 10px;
+}
+.dish_info p {
+    font-size: 17px;
+}
+@media only screen and (max-width : 768px) {
+    .seller_text {
+        padding-bottom: 20px !important;
+    }
+}
+/* Best seller section ends here  */
+/* Oriental section starts here  */
+.oriental_section {
+    margin-top: 135px;
+    background-image: url('../images/oriental-bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* margin-bottom: 25px; */
+    /* no margin bottom for small device  */
+}
+.oriental_info h2 {
+    font-size: 100px;
+    color : var(--heading-color1);
+    margin-top: 135px;
+}
+.oriental_info p {
+    color : white;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.oriental_btn {
+    background: var(--heading-color1);
+    padding: 10px 40px;
+    /* margin-bottom: 100px; */
+    font-size: 19px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.oriental_btn:hover {
+    color : var(--heading-color1);
+    background: black;
+    text-decoration: overline;
+}
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+    .oriental_section {
+        margin-bottom: -50px;
+    }
+    .oriental_btn {
+        padding-bottom: 5px;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .oriental_section {
+        margin-bottom: -25px;
+    }
+    .oriental_info h2 {
+        text-align: center;
+    }
+    .oriental-image {
+        margin-left: 30px;
+    }
+}
+/* Oriental section ends here  */
+/* Statistics section starts here  */
+.statistic_section {
+    background-image: url(../images/statistic-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--footer-color);
+    padding-top: 100px;
+    padding-bottom: 60px;
+}
+.statistics_head {
+    padding-top: 100px;
+}
+.statistics_head h2 {
+    font-size: 100px;
+    color : var(--heading-color1);
+}
+.statistics_head p {
+        color : white;
+        font-size: 20px;
+        font-weight: 400;
+        letter-spacing: 1px;
+}
+.result_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.statistics_result {
+    height: 200px;
+    width: 200px;
+    border: 4px solid white;
+    border-radius: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.result1 {
+    color : var(--heading-color1) !important;
+    font-size: 50px !important;
+    font-weight: 700 !important;
+}
+.result2 {
+    font-size: 30px !important;
+    font-weight: 700 !important;
+    text-transform: uppercase;
+}
+
+@media only screen and (max-width : 992px ) and (min-width : 768px) {
+    .statistics_result  {
+        height : 150px;
+        width: 150px;
+    }
+    .result1 {
+        font-size: 40px !important;
+    }
+    .result2 {
+        font-size: 20px !important;
+    }
+}
+/* Statistics section ends here  */
+/* Grill section starts here  */
+.grill_section {
+    background-image: url(../images/chicken-grill-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -150px;
+    padding-top: 200px;
+    padding-bottom: 250px;
+    margin-bottom: 100px;
+}
+.grill_info h2 {
+    font-size: 100px;
+    color : var(--heading-color1);
+    margin-top: 100px;
+}
+.grill_info p {
+    color : white;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.grill_btn {
+    background: var(--heading-color1);
+    padding: 10px 40px;
+    /* margin-bottom: 100px; */
+    font-size: 19px !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-top: 20px;
+    transition: 0.4s;
+}
+.grill_btn:hover {
+    color : var(--heading-color1);
+    background: black;
+    text-decoration: overline;
+}
+@media only screen and (max-width : 1200px) and (min-width : 992px) {
+    .grill_info h2 {
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width : 768px) and (min-width : 320px) {
+    .grill_info h2 {
+        margin-top: 0px;
+    }
+    .grill_btn {
+        margin-bottom: 30px;
+    }
+    .grill_img {
+        margin-left: 30px;
+    }
+}
+/* Grill section ends here  */
+/* Lenora section starts here  */
+.lenora_section {
+    background-image: url(../images/lenora-bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.lenora_info {
+    padding-top: 200px;
+    padding-bottom: 150px;
+}
+.lenora_info p {
+    font-size: 30px;
+    letter-spacing: 1px;
+}
+.lenora_info h2 {
+    font-size: 70px;
+    margin-top: 10px;
+}
+/* Lenora section ends here  */
+/* Subscribe section starts here  */
+.subscribe_section {
+    background-image: url(../images/subscribe.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 200px;
+    padding-bottom: 300px;
+    margin-top: 10px;
+}
+.subscribe_info h2 {
+    margin-bottom: 5px;
+    font-size: 75px;
+}
+.subscribe_info p {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.subscribe_btn_wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.subscribe_mail {
+    width : 60%;
+    border-radius: 0px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: 0.3s;
+}
+.subscribe_mail:focus {
+    outline : 1px solid var(--heading-color1);
+}
+.subscribe_mail::placeholder {
+    color : rgba(128, 128, 128, 0.61);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+}
+.subscribe_submit {
+    width: 40%;
+    border-radius: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 17px;
+    text-transform: uppercase;
+    background: var(--heading-color1);
+    transition: 0.4s;
+}
+.subscribe_submit:hover {
+    background: black;
+    color : white;
+    border : 1px dashed var(--heading-color1);
+}
+@media only screen and (max-width : 768px) {
+    .subscribe_btn_wrapper {
+        flex-direction: column;
+        gap : 10px;
+    }
+}
+/* Subscribe section ends here  */
+/* Footer section starts here  */
+.footer-section {
+    background: var(--footer-color);
+    padding-top: 100px;
+    padding-bottom: 50px;
+    color : white;
+}
+.footer_head {
+    font-weight: 700;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.footer_text {
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.footer_left a i {
+    background: white;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    margin-right: 10px;
+    transition: 0.4s;
+}
+.footer_left a i:hover {
+    background: black;
+    color :  var(--heading-color1) !important;
+}
+.footer_links {
+    padding-left: 50px;
+}
+.footer_links a {
+    color : white;
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: 0.4s;
+}
+.footer_links a:hover {
+    color : var(--heading-color1);
+}
+@media only screen and (max-width : 992px) and (min-width : 768px) {
+    .footer_left a i {
+        margin-right: 5px;
+        line-height: 30px;
+        width: 30px;
+        height: 30px;
+    }
+}
+@media only screen and (max-width : 768px) {
+    .footer-section {
+        text-align: center;
+    }
+    .footer_head {
+        margin-top: 20px;
+        padding-left: 0px !important;
+    }
+    .footer_links {
+        padding-left: 0px;
+    }
+}
+/* Footer section ends here  */
